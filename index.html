@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Unrivaled Growth - Be The One Featured [Your City] [Your Business Type]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styles - Similar to your original design's palette */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f0f0f0; /* Light text */
+        }
+        .accent-gold {
+            color: #d4af37; /* Gold accent - adjust as needed */
+        }
+        .bg-accent-gold {
+            background-color: #d4af37; /* Gold accent background */
+        }
+        .btn-primary {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #c89f2c; /* Darker gold on hover */
+            transform: translateY(-2px);
+        }
+        .section-title {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 700;
+            margin-bottom: 1.5rem; /* 24px */
+            text-align: center;
+        }
+        .highlight-text {
+            color: #d4af37;
+            font-weight: 700;
+        }
+        /* Animation placeholders - to be implemented with JS */
+        .fade-in {
+            opacity: 0;
+            animation: fadeInAnimation 1s ease-out forwards;
+        }
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideInLeftAnimation 0.8s ease-out forwards;
+        }
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            animation: slideInRightAnimation 0.8s ease-out forwards;
+        }
+        .pulse-button {
+            animation: pulseAnimation 2s infinite;
+        }
+
+        @keyframes fadeInAnimation {
+            to { opacity: 1; }
+        }
+        @keyframes slideInLeftAnimation {
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRightAnimation {
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pulseAnimation {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+
+        /* Custom card styling */
+        .feature-card, .testimonial-card, .pricing-card {
+            background-color: #2c2c2c; /* Slightly lighter dark shade for cards */
+            border: 1px solid #444;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .faq-item {
+            background-color: #2c2c2c;
+            border-bottom: 1px solid #444;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question button {
+            color: #f0f0f0;
+            font-weight: 600;
+        }
+        .faq-question button:hover {
+            color: #d4af37;
+        }
+        .faq-answer {
+            color: #cccccc;
+        }
+        .nav-link {
+            color: #f0f0f0;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="py-6 sticky top-0 z-50 bg-opacity-90 backdrop-blur-md" style="background-color: #1a1a1a;">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-3xl font-bold accent-gold">TRC Luxury</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#social-proof" class="nav-link">Success Stories</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="btn-primary font-semibold py-2 px-6 rounded-lg text-lg">Get Started Free</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-gray-800 bg-opacity-95 py-4">
+            <a href="#hero" class="block text-center nav-link py-2">Home</a>
+            <a href="#benefits" class="block text-center nav-link py-2">Benefits</a>
+            <a href="#social-proof" class="block text-center nav-link py-2">Success Stories</a>
+            <a href="#pricing" class="block text-center nav-link py-2">Pricing</a>
+            <a href="#contact" class="block text-center mt-2 mx-auto w-max btn-primary font-semibold py-2 px-6 rounded-lg text-lg">Get Started Free</a>
+        </div>
+    </header>
+
+    <section id="hero" class="py-20 md:py-32 min-h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight fade-in" style="animation-delay: 0.2s;">
+                Be The <span class="accent-gold">One Featured</span> Columbus Pizzeria.
+            </h1>
+            <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto text-gray-300 fade-in" style="animation-delay: 0.4s;">
+                We partner with <span class="font-semibold">only one [Business Type, e.g., Pizzeria]</span> in <span class="font-semibold">[Location, e.g., Columbus]</span>.
+                Claim your exclusive spot and dominate the local market.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12 fade-in" style="animation-delay: 0.6s;">
+                <a href="#pricing" class="btn-primary font-semibold py-4 px-10 rounded-lg text-xl pulse-button">
+                    Start Your Free Trial Now
+                </a>
+                <a href="#guarantee" class="border-2 border-accent-gold text-accent-gold font-semibold py-3.5 px-10 rounded-lg text-xl hover:bg-accent-gold hover:text-black transition duration-300">
+                    Learn About Our Guarantee
+                </a>
+            </div>
+            <div id="guarantee" class="mt-12 p-6 bg-gray-800 rounded-xl max-w-2xl mx-auto shadow-2xl fade-in" style="animation-delay: 0.8s;">
+                 <div class="flex items-center justify-center mb-3">
+                    <i class="fas fa-shield-alt text-3xl accent-gold mr-3"></i>
+                    <h3 class="text-2xl font-bold accent-gold">Your Success is Guaranteed!</h3>
+                </div>
+                <p class="text-gray-300 text-lg">
+                    Experience <span class="highlight-text">accelerated review growth</span> and <span class="highlight-text">100% satisfaction</span>, or your money back. Try it completely <span class="highlight-text">risk-free</span>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title slide-in-left">Don't Let Competitors Steal Your Customers!</h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8 slide-in-right">
+                In today's competitive market, online reputation is everything. Optimize your listings, improve your visibility on Google, and gain a significant edge. We make it simple.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <div class="feature-card p-6 slide-in-left" style="animation-delay: 0.2s;">
+                    <div class="text-3xl accent-gold mb-3"><i class="fas fa-eye"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Missed Opportunities</h3>
+                    <p class="text-gray-400">Poor online presence means potential customers choose your competitors. We ensure you're seen by the right people.</p>
+                </div>
+                <div class="feature-card p-6 slide-in-left" style="animation-delay: 0.4s;">
+                    <div class="text-3xl accent-gold mb-3"><i class="fas fa-star-half-alt"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Negative Reviews Hurt</h3>
+                    <p class="text-gray-400">A few bad reviews can deter many. We help you build a stellar reputation that attracts customers.</p>
+                </div>
+                <div class="feature-card p-6 slide-in-left" style="animation-delay: 0.6s;">
+                    <div class="text-3xl accent-gold mb-3"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-2xl font-semibold mb-2">Stagnant Growth</h3>
+                    <p class="text-gray-400">Struggling to grow your customer base? Our targeted strategies are designed for local business expansion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-proof" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title fade-in">Local Businesses We've Transformed</h2>
+            <p class="text-xl text-gray-300 text-center max-w-2xl mx-auto mb-12 fade-in" style="animation-delay: 0.2s;">
+                See how businesses like yours have achieved incredible review growth and customer engagement with our exclusive program.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-8 slide-in-right" style="animation-delay: 0.3s;">
+                    <img src="https://placehold.co/100x100/d4af37/1a1a1a?text=Logo1" alt="Business Logo 1" class="w-20 h-20 rounded-full mx-auto mb-6 border-2 border-accent-gold">
+                    <h3 class="text-2xl font-semibold text-center mb-2 accent-gold">[Example Pizzeria Name]</h3>
+                    <p class="text-gray-400 text-center mb-4 italic">"Our reviews went from 3.5 to 4.8 stars in just 3 months! We're busier than ever."</p>
+                    <div class="text-center">
+                        <p class="text-lg font-semibold">Review Growth: <span class="accent-gold">+150%</span></p>
+                        <p class="text-sm text-gray-500">Before: 50 Reviews | After: 125+ Reviews</p>
+                    </div>
+                </div>
+                <div class="testimonial-card p-8 slide-in-right" style="animation-delay: 0.5s;">
+                    <img src="https://placehold.co/100x100/d4af37/1a1a1a?text=Logo2" alt="Business Logo 2" class="w-20 h-20 rounded-full mx-auto mb-6 border-2 border-accent-gold">
+                    <h3 class="text-2xl font-semibold text-center mb-2 accent-gold">[Local Cafe Example]</h3>
+                    <p class="text-gray-400 text-center mb-4 italic">"The exclusivity was a game-changer. Being the only featured cafe in our area brought in so many new faces."</p>
+                    <div class="text-center">
+                        <p class="text-lg font-semibold">New Customers: <span class="accent-gold">+75%</span></p>
+                        <p class="text-sm text-gray-500">Featured for: 6 Months</p>
+                    </div>
+                </div>
+                <div class="testimonial-card p-8 slide-in-right" style="animation-delay: 0.7s;">
+                    <img src="https://placehold.co/100x100/d4af37/1a1a1a?text=Logo3" alt="Business Logo 3" class="w-20 h-20 rounded-full mx-auto mb-6 border-2 border-accent-gold">
+                    <h3 class="text-2xl font-semibold text-center mb-2 accent-gold">[Service Business Example]</h3>
+                    <p class="text-gray-400 text-center mb-4 italic">"The money-back guarantee made it a no-brainer to try. Best decision we've made for our marketing."</p>
+                    <div class="text-center">
+                        <p class="text-lg font-semibold">Satisfaction: <span class="accent-gold">100% Guaranteed</span></p>
+                        <p class="text-sm text-gray-500">Risk-Free Trial Converted to Annual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title fade-in">The Premier Advantage You'll Receive</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div class="feature-card p-6 text-center slide-in-left" style="animation-delay: 0.2s;">
+                    <div class="text-4xl accent-gold mb-4"><i class="fas fa-crown"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Exclusive Local Feature</h3>
+                    <p class="text-gray-400">Be the *only* [Business Type] in [Location] we partner with. Unmatched visibility.</p>
+                </div>
+                <div class="feature-card p-6 text-center slide-in-left" style="animation-delay: 0.4s;">
+                    <div class="text-4xl accent-gold mb-4"><i class="fas fa-rocket"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Accelerated Review Growth</h3>
+                    <p class="text-gray-400">Our system is designed to significantly boost your positive online reviews, quickly.</p>
+                </div>
+                <div class="feature-card p-6 text-center slide-in-left" style="animation-delay: 0.6s;">
+                    <div class="text-4xl accent-gold mb-4"><i class="fas fa-shield-heart"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">100% Satisfaction Guarantee</h3>
+                    <p class="text-gray-400">We stand by our results. If you're not satisfied, you get your money back. No risk.</p>
+                </div>
+                <div class="feature-card p-6 text-center slide-in-right" style="animation-delay: 0.2s;">
+                    <div class="text-4xl accent-gold mb-4"><i class="fas fa-comments"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Dedicated Review Survey</h3>
+                    <p class="text-gray-400">Easy-to-use survey tools that encourage every satisfied customer to share their positive experience.</p>
+                </div>
+                 <div class="feature-card p-6 text-center slide-in-right" style="animation-delay: 0.4s;">
+                    <div class="text-4xl accent-gold mb-4"><i class="fas fa-qrcode"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Custom QR Codes & Links</h3>
+                    <p class="text-gray-400">Printed materials and digital links make it effortless for customers to leave reviews anytime, anywhere.</p>
+                </div>
+                 <div class="feature-card p-6 text-center slide-in-right" style="animation-delay: 0.6s;">
+                    <div class="text-4xl accent-gold mb-4"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Valuable Customer Insights</h3>
+                    <p class="text-gray-400">Understand your customers better and make data-driven decisions to improve your service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="limited-time" class="py-16">
+        <div class="container mx-auto px-6 text-center">
+             <div class="bg-accent-gold text-gray-900 p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Limited Time: Exclusive Enrollment Opportunity!</h2>
+                <p class="text-lg md:text-xl mb-6">
+                    Your [Location] [Business Type] spot is currently <span class="font-extrabold underline">OPEN</span>.
+                    Once filled, it's gone. Don't miss your chance to become the reputation leader in your area.
+                </p>
+                <a href="#pricing" class="bg-gray-900 text-white font-semibold py-3 px-8 rounded-lg text-lg hover:bg-gray-700 transition duration-300 pulse-button">
+                    Claim Your Exclusive Spot Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title fade-in">Choose Your Path to Reputation Excellence</h2>
+            <p class="text-xl text-gray-300 text-center max-w-2xl mx-auto mb-12 fade-in" style="animation-delay: 0.2s;">
+                Select the plan that best suits your business goals. All plans include our 100% Satisfaction Guarantee.
+                <span class="block mt-2 font-semibold">Try our most popular plan with a FREE 14-Day Trial!</span>
+            </p>
+            <div class="flex flex-col lg:flex-row justify-center items-stretch gap-8">
+                <div class="pricing-card p-8 w-full lg:w-1/3 flex flex-col slide-in-left" style="animation-delay: 0.4s;">
+                    <h3 class="text-2xl font-semibold text-center mb-2">Monthly Plan</h3>
+                    <p class="text-center text-gray-400 mb-6">Flexible & Powerful</p>
+                    <div class="text-5xl font-bold text-center mb-1 accent-gold">$97<span class="text-xl font-normal text-gray-400">/month</span></div>
+                    <p class="text-center text-gray-500 mb-6">Billed Monthly</p>
+                    <ul class="space-y-3 text-gray-300 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> Exclusive Local Feature</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> Accelerated Review Growth</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> All Core Platform Features</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> Monthly Performance Reports</li>
+                        <li class="flex items-center"><i class="fas fa-times-circle text-gray-500 mr-2"></i> Annual Discount</li>
+                    </ul>
+                    <a href="#contact" class="w-full text-center border-2 border-accent-gold text-accent-gold font-semibold py-3 px-6 rounded-lg hover:bg-accent-gold hover:text-black transition duration-300">
+                        Get Started Monthly
+                    </a>
+                </div>
+
+                <div class="pricing-card p-8 w-full lg:w-1/3 flex flex-col border-4 border-accent-gold relative slide-in-left" style="animation-delay: 0.6s;">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-accent-gold text-gray-900 px-4 py-1 text-sm font-semibold rounded-full">MOST POPULAR</div>
+                    <h3 class="text-2xl font-semibold text-center mb-2">Annual Plan</h3>
+                    <p class="text-center text-gray-400 mb-6">Best Value + Free Trial</p>
+                    <div class="text-5xl font-bold text-center mb-1 accent-gold">$970<span class="text-xl font-normal text-gray-400">/year</span></div>
+                    <p class="text-center text-green-400 font-semibold mb-1">Save $194 (Over 15% Off!)</p>
+                    <p class="text-center text-gray-500 mb-6">Billed Annually After Free Trial</p>
+                    <ul class="space-y-3 text-gray-300 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> <span class="font-bold">14-Day FREE Trial</span></li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> Exclusive Local Feature</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> Accelerated Review Growth</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> All Core Platform Features</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> Monthly Performance Reports</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle accent-gold mr-2"></i> Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="w-full text-center btn-primary font-semibold py-3 px-6 rounded-lg text-lg">
+                        Start Your FREE Trial
+                    </a>
+                </div>
+            </div>
+             <p class="text-center mt-10 text-gray-400 fade-in" style="animation-delay: 0.8s;">
+                <i class="fas fa-shield-alt accent-gold mr-2"></i>All plans are backed by our <span class="highlight-text">100% Money-Back Guarantee</span>. Try it risk-free!
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title fade-in">Secure Your Spot & Start Your Free Trial</h2>
+            <p class="text-xl text-gray-300 text-center max-w-2xl mx-auto mb-12 fade-in" style="animation-delay: 0.2s;">
+                Ready to become the go-to [Business Type] in [Location]? Fill out the form below to claim your exclusive spot and begin your risk-free trial.
+                Limited spots available!
+            </p>
+            <form class="max-w-2xl mx-auto bg-gray-800 p-8 md:p-10 rounded-xl shadow-2xl fade-in" style="animation-delay: 0.4s;">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="businessName" class="block text-sm font-medium text-gray-300 mb-1">Business Name</label>
+                        <input type="text" id="businessName" name="businessName" required class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition" placeholder="[Your City] Pizzeria">
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition" placeholder="(555) 123-4567">
+                    </div>
+                </div>
+                 <div class="mb-6">
+                    <label for="businessType" class="block text-sm font-medium text-gray-300 mb-1">Your Business Type (e.g., Pizzeria, Salon, Cafe)</label>
+                    <input type="text" id="businessType" name="businessType" required class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition" placeholder="Pizzeria">
+                </div>
+                <div class="mb-8">
+                    <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Any Questions? (Optional)</label>
+                    <textarea id="message" name="message" rows="3" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition" placeholder="Tell us a bit about your business or any questions you have..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full btn-primary font-semibold py-4 px-8 rounded-lg text-xl">
+                        Claim My Free Trial & Exclusive Spot
+                    </button>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-6">
+                    By submitting, you agree to our Terms of Service. Your 14-day trial is 100% free. No credit card required to start.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto mt-8 space-y-1 fade-in" style="animation-delay: 0.2s;">
+                <div class="faq-item rounded-lg overflow-hidden">
+                    <div class="faq-question">
+                        <button class="w-full flex justify-between items-center text-left p-5 focus:outline-none">
+                            <span>What happens after I place my order or start my trial?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 text-gray-400">
+                            Once you sign up for the trial or a plan, our team will reach out within 24 hours to onboard you. We'll discuss your specific business (e.g., your Columbus Pizzeria), set up your exclusive feature, and start implementing the review growth strategies. For trial users, we'll guide you through making the most of your 14 days.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item rounded-lg overflow-hidden">
+                    <div class="faq-question">
+                        <button class="w-full flex justify-between items-center text-left p-5 focus:outline-none">
+                            <span>How does the 100% Money-Back Guarantee work?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 text-gray-400">
+                            It's simple! If, after the first 30 days of your paid plan, you're not satisfied with the accelerated review growth or our service for any reason, just let us know. We'll issue a full refund, no questions asked. We're confident you'll see results.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item rounded-lg overflow-hidden">
+                    <div class="faq-question">
+                        <button class="w-full flex justify-between items-center text-left p-5 focus:outline-none">
+                            <span>Is the "one business per area" policy really strict?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 text-gray-400">
+                            Yes. To ensure maximum impact and avoid diluting results, we strictly adhere to featuring only one specific type of business (e.g., one pizzeria, one salon) within a defined local geographic area (e.g., Columbus). This exclusivity is a core part of our value proposition.
+                        </p>
+                    </div>
+                </div>
+                 <div class="faq-item rounded-lg overflow-hidden">
+                    <div class="faq-question">
+                        <button class="w-full flex justify-between items-center text-left p-5 focus:outline-none">
+                            <span>What if I want to cancel my free trial?</span>
+                            <svg class="w-5 h-5 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <p class="p-5 text-gray-400">
+                            You can cancel your free trial at any time before the 14 days are up with no obligation. We won't charge you anything. We hope you'll love the results and choose to continue, but there's no pressure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-gray-700">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-500">&copy; 2025 TRC Luxury. All Rights Reserved.</p>
+            <p class="text-gray-500 mt-1">
+                <a href="#" class="hover:text-accent-gold transition">Privacy Policy</a> | <a href="#" class="hover:text-accent-gold transition">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic JavaScript for Mobile Menu Toggle and FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile menu toggle
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', function () {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const button = item.querySelector('.faq-question button');
+                const answer = item.querySelector('.faq-answer');
+                const icon = button.querySelector('svg');
+
+                button.addEventListener('click', () => {
+                    // Close other open FAQs
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.querySelector('.faq-answer').style.maxHeight = '0px';
+                            otherItem.querySelector('.faq-question button svg').classList.remove('rotate-180');
+                        }
+                    });
+
+                    // Toggle current FAQ
+                    if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+                        answer.style.maxHeight = '0px';
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+
+            // Simple scroll animations (can be enhanced with Intersection Observer)
+            const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target); // Optional: stop observing after animation
+                    }
+                });
+            }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+
+            animatedElements.forEach(el => {
+                el.style.animationPlayState = 'paused'; // Pause by default
+                observer.observe(el);
+            });
+        });
+    </script>
+
+</body>
+</html>
